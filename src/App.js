@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useResource } from 'react-request-hook'
 
 function App() {
+  const test = useResource(() => ({}))
   return (
     <div className="App">
       <header className="App-header">
